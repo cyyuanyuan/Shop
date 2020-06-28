@@ -1,0 +1,40 @@
+/* 样式清空 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    list-style: none;
+}
+i,b {
+    display: block;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+ul,li,dl,dt,dd {
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: "";
+    visibility: hidden;
+    clear: both;
+}
+.over{
+    overflow: hidden;
+}
+
