@@ -14,7 +14,8 @@ import Ele from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'; // 引入elementui样式库
 Vue.use(Ele)
 //全局使用axios
-import axios from 'axios'
+import axios from '@/untils/resquest'
+import store from './store'
 //将axios绑定到vue原型
 Vue.prototype.$axios=axios
 Vue.config.productionTip = false
@@ -31,6 +32,7 @@ Vue.directive("jump",(el,{ value },vnode,oldNode)=>{
 new Vue({
   el: '#app',
   router,
+  store,
   components: {
     App
   },
