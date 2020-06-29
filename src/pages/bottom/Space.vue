@@ -1,13 +1,11 @@
-<!-- 首页 -->
+<!-- 分类 -->
 <template>
     <div>
-       <router-view></router-view>
-        <Footer></Footer>
+        <h3>分类</h3>
     </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer'
 export default {
     data () {
         return {
@@ -22,7 +20,7 @@ export default {
         
     },
     components: {
-        Footer
+        
     },
 }
 
