@@ -36,3 +36,5 @@ const storage = {
         localStorage.removeItem(key);
     }
 }
+//抛出对象即可
+export default storage;

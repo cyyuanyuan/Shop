@@ -44,12 +44,18 @@ export default new Router({
     {
       path: '/login',
       name: 'Login',
-      component: Login
+      component: Login,
+      meta:{
+        title:'严选商城用户登录'
+      }
     },
     {
       path: '/zhuce',
       name: 'Zhuce',
-      component: Zhuce
+      component: Zhuce,
+      meta:{
+        title:'严选商城用户注册'
+      }
     },
   ]
 })

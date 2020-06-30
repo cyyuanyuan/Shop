@@ -157,7 +157,7 @@ div > img {
   padding: 0.2rem 0;
 }
 #user p {
-  font-size: 0.2rem;
+  font-size: 0.3rem;
 }
 .cy_font {
   height: 0.6rem;

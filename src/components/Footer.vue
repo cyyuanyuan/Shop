@@ -1,13 +1,13 @@
 <!-- 尾部 -->
 <template>
-  <div>
+ 
     <ul id="foot">
         <li v-for="(item, index) in footer1" :key="index" v-jump='item.to' @click="dot(index)" :class="activeIndex==index?'red':''">
             <i :class="item.name"></i>
             <p>{{ item.title }}</p>
         </li>
     </ul>
-  </div>
+
 </template>
 
 <script>
@@ -59,7 +59,7 @@ export default {
   align-items: center;
   text-align: center;
   position: fixed;
-  bottom: 0.1rem;
+  bottom: 0.2rem;
   background: #FFFFFF;
   z-index: 10000;
   border-top: 0.01rem solid #E9E9E9;
@@ -70,7 +70,7 @@ export default {
       font-size: 0.6rem;
     }
     p:nth-of-type(1){
-      font-size: 0.24rem;
+      font-size: 0.3rem;
       margin-top: 0.04rem;
     }
   }

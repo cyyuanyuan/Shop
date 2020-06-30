@@ -30,6 +30,16 @@ Vue.directive("jump",(el,{ value },vnode,oldNode)=>{
     })
   }
 })
+//
+//全局路由守卫,进入组件之前触发
+router.beforeEach((to,from, next)=>{ 
+  //判断路由是否设置title值，给组件添加标题内容
+  if(to.hasOwnProperty("meta")){
+    document.title = to.meta.title;
+  }
+
+  next();
+});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
