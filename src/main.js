@@ -17,6 +17,7 @@ Vue.use(Ele)
 import storage from '@/untils/storage'
 //全局使用axios
 import axios from '@/untils/resquest'
+axios.defaults.baseURL='https://api.it120.cc/small4'
 import store from './store'
 //将axios绑定到vue原型
 Vue.prototype.$axios=axios

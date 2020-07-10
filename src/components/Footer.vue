@@ -53,13 +53,13 @@ export default {
 <style scoped lang='scss'>
 #foot{
   width: 100%;
-  height: 1.2rem;
+  height: 1.4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   position: fixed;
-  bottom: 0.2rem;
+  bottom: 0rem;
   background: #FFFFFF;
   z-index: 10000;
   border-top: 0.01rem solid #E9E9E9;

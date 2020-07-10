@@ -10,15 +10,20 @@ const Server =axios.create({
     timeout:3000
 })
 //使用Server创建请求拦截器
-Server.interceptors.request.use(function(){
+Server.interceptors.request.use(function(config){
     return config;
-},function(){
+},function(error){
     return Promise.reject(error)
 })
 //使用Server创建响应拦截器
-Server.interceptors.response.use(function(){
+Server.interceptors.response.use(function(response){
+    console.log(response);
+    //判断接口返回的数据成功，直接返回数据中data数据
+    if(response.status == 200){
+        return response.data;
+    }
     return response;
-},function(){
-    return Promise.reject(error)
-})
+},function(error){
+    return Promise.reject(error);
+});
 export default Server
