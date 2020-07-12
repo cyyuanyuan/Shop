@@ -45,7 +45,7 @@ export default {
 <style scoped lang='scss'>
 .cy_box {
   width: 100%;
-  height: 7rem;
+  height: 8rem;
 }
 .cy_title {
   border-bottom: 1px solid #dddd;
@@ -56,21 +56,21 @@ export default {
 }
 .cy_box>div:nth-of-type(2){
      width: 100%;
-        height: 5.78rem;
+        height: 8rem;
         border-bottom:0.3rem solid #F5F5F5;
         // overflow: hidden;
         overflow: auto;
          >ul{
             width: 22.7rem;
-            height: 5rem;
+            height: 8rem;
             display: flex;
             >li{
-                width: 8rem;
+                width: 10rem;
                 height: 4.5rem;
                 margin-left: 0.12rem;
                 >img{
-                    width: 8rem;
-                    height: 4.5rem;
+                    width: 10rem;
+                    height: 5.5rem;
                     display: block;
                     border-radius: 0.06rem;
                 }

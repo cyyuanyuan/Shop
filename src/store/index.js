@@ -2,16 +2,23 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 import axios from 'axios'
+import { strictEqual } from 'assert';
 // 使用数据持久化
 //import createPersistedState from 'vuex-persistedstate'
 let store=new Vuex.Store({
     state:{
-        list:[]
+        list:[],
+        loading:true,
+        num:1
     },
     mutations:{
         changeList(state,res) {
             state.list = res
         },
+        //设置loading效果
+        setLoading(state,payload){
+                state.loading=payload
+        }
     },
     actions:{
         // 获取本地数据json，时间为2秒

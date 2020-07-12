@@ -12,6 +12,7 @@ import Login from '@/pages/Login'
 import Zhuce from '@/pages/Zhuce'
 import Allcut from '@/pages/Allcut'
 import Xiang from '@/pages/Xiang'
+import Categood from '@/components/Categood'
 Vue.use(Router)
 
 export default new Router({
@@ -94,6 +95,14 @@ export default new Router({
       component: Xiang,
       meta:{
         title:'详情商品'
+      }
+    },
+    {
+      path: '/categood/:id',
+      name: 'Categood',
+      component: Categood,
+      meta:{
+        title:'分类详情商品'
       }
     },
     

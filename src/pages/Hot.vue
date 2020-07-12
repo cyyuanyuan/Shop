@@ -55,6 +55,8 @@ export default {
 }
 .hot_main{
   width: 100%;
+  padding-bottom: 0.8rem;
+  box-sizing: border-box;
   ul{
      width: 100%;
         display: flex;

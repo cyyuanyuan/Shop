@@ -46,21 +46,21 @@ export default {
                 padding: 0.1rem;
                 border-bottom: 0.01rem solid #E9E9E9;
                 >img{
-                    width: 2.58rem;
-                    height: 2.58rem;
+                    width: 3.8rem;
+                    height: 3.8rem;
                     border-radius: 0.06rem;
                     display: block;
                 }
                 >div{
                     margin-left: 0.3rem;
                     >p:nth-of-type(1){
-                        font-size: .4rem;
+                        font-size: .5rem;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
                     }
                     >p:nth-of-type(2){
-                        font-size: .3rem;
+                        font-size: .4rem;
                         color: #b2b2b2;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -76,11 +76,11 @@ export default {
                             margin-top: 0.46rem;
                             >p:nth-of-type(1){
                                 color: #B2B2B2;
-                                font-size: 0.3rem;
+                                font-size: 0.4rem;
                             }
                             >p:nth-of-type(2){
                                 color: #B2B2B2;
-                                font-size: 0.3rem;
+                                font-size: 0.4rem;
                                 margin-top: 0.06rem;
                             }
                         }

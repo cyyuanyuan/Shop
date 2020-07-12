@@ -32,8 +32,8 @@ export default {
 <style scoped lang='scss'>
     .cy_m{
          >img{
-                width: 5rem;
-                height: 6rem;
+                width: 6rem;
+                height: 7rem;
                 display: block;
             }
             >p:nth-of-type(1){
