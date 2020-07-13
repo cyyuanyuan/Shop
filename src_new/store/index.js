@@ -6,12 +6,17 @@ import axios from 'axios'
 //import createPersistedState from 'vuex-persistedstate'
 let store=new Vuex.Store({
     state:{
-        list:[]
+        list:[],
+        loading:true,
     },
     mutations:{
         changeList(state,res) {
             state.list = res
         },
+         //设置loading效果
+         setLoading(state,payload){
+            state.loading=payload
+    }
     },
     actions:{
         // 获取本地数据json，时间为2秒

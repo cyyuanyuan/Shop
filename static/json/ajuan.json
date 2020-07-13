@@ -2,7 +2,7 @@
     {   
         "idd":1,
         "_id":1,
-        "pic":"../static/img/images/maji_05.jpg",
+        "pic":"../static/img/23.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,
@@ -14,7 +14,7 @@
     {
         "idd":2,
         "_id":1,
-        "pic":"../static/img/images/maji_08.jpg",
+        "pic":"../static/img/24.jpg",
         "name":"粤式炒饭",
         "price":16,
         "number":1,
@@ -26,7 +26,7 @@
     {
         "idd":3,
         "_id":1,
-        "pic":"../static/img/images/maji_10.jpg",
+        "pic":"../static/img/26.jpg",
         "name":"鱼香茄子米饭",
         "price":16,
         "number":1,
@@ -38,7 +38,7 @@
     {
         "idd":4,
         "_id":2,
-        "pic":"../static/img/images/maji_12.jpg",
+        "pic":"../static/img/27.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,
@@ -50,7 +50,7 @@
     {
         "idd":5,
         "_id":2,
-        "pic":"../static/img/images/remai_03.jpg",
+        "pic":"../static/img/23.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,
@@ -62,7 +62,7 @@
     {
         "idd":6,
         "_id":2,
-        "pic":"../static/img/images/remai_06.jpg",
+        "pic":"../static/img/26.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,
@@ -74,7 +74,7 @@
     {
         "idd":7,
         "_id":2,
-        "pic":"../static/img/images/remai_08.jpg",
+        "pic":"../static/img/27.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,
@@ -86,7 +86,7 @@
     {
         "idd":7,
         "_id":2,
-        "pic":"../static/img/images/maji_05.jpg",
+        "pic":"../static/img/23.jpg",
         "name":"香菇滑鸡翅",
         "price":16,
         "number":1,

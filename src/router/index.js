@@ -13,6 +13,7 @@ import Zhuce from '@/pages/Zhuce'
 import Allcut from '@/pages/Allcut'
 import Xiang from '@/pages/Xiang'
 import Categood from '@/components/Categood'
+import Search from '@/components/Search'
 Vue.use(Router)
 
 export default new Router({
@@ -103,6 +104,14 @@ export default new Router({
       component: Categood,
       meta:{
         title:'分类详情商品'
+      }
+    },
+    {
+      path: '/search',
+      name: 'Search',
+      component: Search,
+      meta:{
+        title:'分类搜索商品'
       }
     },
     

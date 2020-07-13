@@ -1,12 +1,17 @@
 <template>
   <div id="app">    
     <router-view/>
+     <Loading v-show="this.$store.state.loading"> </Loading>   
   </div>
 </template>
 
 <script>
+import Loading from '@/common/Loading'
 export default {
-  name: 'App'
+  name: 'App',
+   components: {
+    Loading
+  }
 }
 </script>
 

@@ -2,7 +2,7 @@
 <template>
   <div>
     <!-- 搜索框 -->
-    <van-search v-model="value" shape="round" background="white" placeholder="回车搜索商品" />
+    <van-search v-model="value" shape="round" background="white" placeholder="回车搜索商品"  @focus="Focus"/>
     <van-tree-select
       height="155vw"
       :items="items"
@@ -66,7 +66,16 @@ export default {
           }
         });
       });
+     
     },
+    //搜索跳转
+     Focus(){
+        this.$router.push({
+          path:'/search'
+        }
+         
+        )
+      },
     //点击切换左侧
     Leftclick(index) {
       console.log(this.cateId[index]);
