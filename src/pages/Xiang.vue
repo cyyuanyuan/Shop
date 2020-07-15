@@ -36,7 +36,6 @@ export default {
 
   mounted() {
     let id = this.$route.query.id;
-    console.log(id);
     this.$axios.get("/shop/goods/detail?id=" + id).then(res => {
       this.list = res.data;
       //   if (res.data.msg == "success") {

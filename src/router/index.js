@@ -14,6 +14,11 @@ import Allcut from '@/pages/Allcut'
 import Xiang from '@/pages/Xiang'
 import Categood from '@/components/Categood'
 import Search from '@/components/Search'
+import Detaile from '@/pages/Detaile'
+import Hotgood from '@/pages/Hotgood'
+import Renqi from '@/pages/Renqi'
+import Confirm from '@/pages/Confirm'
+import Pay from '@/pages/Pay'
 Vue.use(Router)
 
 export default new Router({
@@ -55,7 +60,8 @@ export default new Router({
           meta:{
             title:'个人中心'
           }
-        },      
+        }, 
+             
       ],
     },
     {
@@ -114,6 +120,46 @@ export default new Router({
         title:'分类搜索商品'
       }
     },
+    {
+      path: '/detaile/:id',
+      name: 'detaile',
+      component: Detaile,
+      meta:{
+        title:'严选专栏详情'
+      }
+    },
+    {
+      path: '/hotgood',
+      name: 'hotgood',
+      component: Hotgood,
+      meta:{
+        title:'人气推荐商品页面'
+      }
+    },
+    {
+      path: '/renqi',
+      name: 'renqi',
+      component:Renqi,
+      meta:{
+        title:'人气详情数据'
+      }
+    }, 
+    {
+      path: '/confirm',
+      name: 'confirm',
+      component:Confirm,
+      meta:{
+        title:'确认订单页面'
+      }
+    },
+    {
+      path: '/pay',
+      name: 'pay',
+      component:Pay,
+      meta:{
+        title:'支付页面'
+      }
+    }, 
     
   ]
 })

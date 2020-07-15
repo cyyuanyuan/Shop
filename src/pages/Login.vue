@@ -88,6 +88,9 @@ export default {
               user.account=this.phone;
                storage.set("YanShop",user,true);
               this.$toast.success('用户登录成功')
+              this.$router.go(-1)
+             
+
           })
       }
   },

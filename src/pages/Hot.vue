@@ -1,10 +1,10 @@
 <!-- 人气推荐 -->
 <template>
   <div class="cy_hot">
-    <div class="cy_title">
+    <div class="cy_title" >
       <van-nav-bar title="人气推荐" > 
         <template #right>
-          <van-icon name="arrow" size="20" class="right"  />
+          <van-icon name="arrow" size="20" class="right" v-jump='path' />
         </template>
       </van-nav-bar>
     </div>
@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       Hotgood:[],
-    
+    path:'/hotgood'
     };
   },
 

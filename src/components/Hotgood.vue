@@ -32,7 +32,7 @@ export default {
 <style scoped lang='scss'>
     .cy_m{
          >img{
-                width: 6rem;
+                width: 5.5rem;
                 height: 7rem;
                 display: block;
             }

@@ -4,18 +4,16 @@
     <div class="cy_title">
       <van-nav-bar title="严选专栏" left-arrow @click-left="onClickLeft" />
     </div>
-    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-      <van-swipe-item v-for="(item, index) in Banner" :key="index">
-        <img src="" alt="">
-      </van-swipe-item>
-    </van-swipe>
+   
     <ul>
-      <li v-for="(item, index) in list" :key="index">
+      <router-link :to="'/detaile/'+item.id" tag='li' v-for="(item, index) in list" :key="index">
         <img :src="item.pic" alt />
-        <p>《影》螳螂捕蝉黄雀在后</p>
-        <p>我记得被色彩惊艳到的《英雄》，视觉冲击会让人爱上这种感觉，似乎在色彩里，更能看出一个人物心情，和当时社会背景。</p>
+        <p>{{ item.title }}</p>
+        <p>{{ item.descript }}</p>
         <p>查看详情</p>
-      </li>
+    
+      </router-link>
+     
     </ul>
   </div>
 </template>
@@ -41,7 +39,7 @@ export default {
         console.log(res.data);
         this.list = res.data;
       });
-    }
+    },
   },
   components: {}
 };

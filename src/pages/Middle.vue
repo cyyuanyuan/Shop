@@ -34,7 +34,6 @@ export default {
 
   mounted() {
        this.$axios.get("https://api.it120.cc/small4/cms/news/list").then(res => {
-      console.log(res.data);
      this.isc=res.data
     });
   },

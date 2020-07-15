@@ -2,7 +2,7 @@
 <template>
   <div>
     <!-- 搜索框 -->
-    <van-search v-model="value" shape="round" background="white" placeholder="回车搜索商品"  @focus="Focus"/>
+    <van-search v-model="value" shape="round" background="white" placeholder="请输入要搜索的商品"  @focus="Focus"/>
     <van-tree-select
       height="155vw"
       :items="items"
@@ -115,8 +115,8 @@ export default {
     text-align: center;
     margin-left: 0.2rem;
     > img {
-      width: 3.2rem;
-      height: 3.2rem;
+      width: 2.2rem;
+      height: 2.2rem;
     }
     > p {
       margin-top: 0.1rem;
