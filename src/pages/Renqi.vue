@@ -119,7 +119,6 @@ export default {
         handleStepperChange: currentValue => {
           //点击步进器的值赋给nums
           this.nums = currentValue;
-          console.log(currentValue);
         }
       }
     };
@@ -205,7 +204,8 @@ export default {
       //用户已经登陆的信息,添加购物车信息
       let cartList = this.$store.state.cartList; //购物车的列表数据
       let index = cartList.findIndex(item => {
-        return item.goods_id == this.cid;
+        console.log(item)
+        return item.good_id == this.cid;
       });
       if (index == -1) {
         //添加购物车对象信息
@@ -226,7 +226,7 @@ export default {
       this.$store.commit("addCart", cartList);
       this.$store.commit("countCar");
       this.$toast.success("加入购物车成功");
-      
+      this.show=false
     },
     
   },

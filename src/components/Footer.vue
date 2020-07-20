@@ -64,10 +64,9 @@ export default {
   z-index: 10000;
   border-top: 0.01rem solid #E9E9E9;
   li{
-    width: 25%;
-    
+    width: 25%;   
     i{
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
     p:nth-of-type(1){
       font-size: 0.3rem;

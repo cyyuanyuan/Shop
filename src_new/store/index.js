@@ -3,16 +3,16 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 import axios from 'axios'
 // 使用数据持久化
-//import createPersistedState from 'vuex-persistedstate'
+import createPersistedState from 'vuex-persistedstate'
 let store=new Vuex.Store({
     state:{
-        list:[],
+        // list:[],
         loading:true,
     },
     mutations:{
-        changeList(state,res) {
-            state.list = res
-        },
+        // changeList(state,res) {
+        //     state.list = res
+        // },
          //设置loading效果
          setLoading(state,payload){
             state.loading=payload
@@ -30,6 +30,6 @@ let store=new Vuex.Store({
             
         }
     },
-    // plugins: [createPersistedState()]
+     plugins: [createPersistedState()]
 })
 export default store

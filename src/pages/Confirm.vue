@@ -86,12 +86,14 @@ export default {
         //组装一下商品的数据
         let arr = [];
         this.$store.state.orderList.forEach(item=>{
+          console.log(item)
             let object = new Object();
-            object.goodsId = item.goods_id;
+            object.goodsId = item.good_id;
             object.number = item.nums;
             object.propertyChildIds = item.properties;
             object.logisticsType = 0;
             arr.push(object);
+            console.log(arr)
         });
         //创建订单的接口数据
         //创建formDate的数据

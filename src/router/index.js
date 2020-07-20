@@ -19,6 +19,17 @@ import Hotgood from '@/pages/Hotgood'
 import Renqi from '@/pages/Renqi'
 import Confirm from '@/pages/Confirm'
 import Pay from '@/pages/Pay'
+import Address from '@/pages/Address'
+import Newaddress from '@/pages/Newaddress'
+import Review  from '@/pages/Review'
+import Cutprice  from '@/pages/Cutprice'
+import Image from '@/test/Image'
+import Water from '@/test/Water'
+//我的订单
+import Order1  from '@/pages/Order1'
+import Order_detaile  from '@/pages/Order_detaile'
+//我的礼券
+import Gift  from '@/pages/Gift'
 Vue.use(Router)
 
 export default new Router({
@@ -160,6 +171,77 @@ export default new Router({
         title:'支付页面'
       }
     }, 
-    
+    {
+      path: '/image',
+      name: 'Image',
+      component:Image,
+      meta:{
+        title:'图片懒加载'
+      }
+    }, 
+    {
+      path: '/address',
+      name: 'Address',
+      component:Address,
+      meta:{
+        title:'我的地址页面'
+      }
+    }, 
+    {
+      path: '/newadd',
+      name: 'Newaddress',
+      component:Newaddress,
+      meta:{
+        title:'新增地址页面'
+      }
+    }, 
+    {
+      path: '/water',
+      name: 'Water',
+      component:Water,
+      meta:{
+        title:'瀑布流页面'
+      }
+    }, 
+    {
+      path: '/review',
+      name: 'Review',
+      component:Review,
+      meta:{
+        title:'我的评价'
+      }
+    }, 
+    {
+      path: '/cutprice',
+      name: 'Cutprice',
+      component:Cutprice,
+      meta:{
+        title:'发起砍价页面'
+      }
+    }, 
+    {
+      path: '/order1',
+      name: 'Order1',
+      component:Order1,
+      meta:{
+        title:'我的订单'
+      }
+    }, 
+    {
+      path: '/order2',
+      name: 'Order_detaile',
+      component:Order_detaile,
+      meta:{
+        title:'订单详情'
+      }
+    }, 
+    {
+      path: '/gift',
+      name: 'Gift',
+      component:Gift,
+      meta:{
+        title:'我的礼券'
+      }
+    }, 
   ]
 })

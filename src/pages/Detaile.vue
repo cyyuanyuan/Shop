@@ -26,7 +26,6 @@ export default {
     },
 
     mounted(){
-        console.log(this.$route.params.id)
         this.aid=this.$route.params.id
         this.getAjax()
     },

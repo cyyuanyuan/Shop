@@ -1,36 +1,17 @@
 <!-- 详情 -->
 <template>
   <div class="main">
-    <div class="banner">
-      <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-        <van-swipe-item v-for="(item, index) in list.pics" :key="index">
-          <img :src="item.pic" alt class="banner-img" />
-        </van-swipe-item>
-      </van-swipe>
-    </div>
-    <div>
-      <p>{{ list.basicInfo.name }}</p>
-      <p></p>
-      <div>
-        <p>
-          低价
-          <span>￥{{list.basicInfo.minPrice}}</span>
-        </p>
-        <p>原价￥{{list.basicInfo.originalPrice}}</p>
-        <p>库存{{list.basicInfo.stores}}</p>
-      </div>
-      <div v-html='list.content'>
-
-      </div>
-    </div>
+    <Details :list="list"  :json='list1'></Details>
   </div>
 </template>
 
 <script>
+import Details from "@/common/Details";
 export default {
   data() {
     return {
-      list: {}
+      list: {},
+      list1:[]
     };
   },
 
@@ -38,25 +19,21 @@ export default {
     let id = this.$route.query.id;
     this.$axios.get("/shop/goods/detail?id=" + id).then(res => {
       this.list = res.data;
-      //   if (res.data.msg == "success") {
-      //     this.list = res.data;
-      //   }
+    });
+     this.$axios.get("/shop/goods/reputation?goodsId=" + id).then(res => {
+      //console.log(res);
+      this.list1 = res.data;
+      console.log(res)
     });
   },
   methods: {},
-  components: {}
+  components: {
+    Details
+  }
 };
 </script>
+
 <style  lang='scss'>
-.banner {
-  width: 100%;
-  img {
-    width: 100%;
-    height: 9.2rem;
-    display: block;
-    margin: 0 auto;
-  }
-}
 .main {
   font-size: 0.2rem;
   > div:nth-of-type(2) {

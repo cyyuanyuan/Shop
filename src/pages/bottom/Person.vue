@@ -3,23 +3,24 @@
   <div>
     <div class="cy_first">
       <div>
-        <img src="/static/img/9.png" alt />
-        <i class="van-icon van-icon-clear van-uploader__preview-delete"></i>
+        <van-uploader v-model='fileList'>
+        <van-icon name="add-o" size='50' v-show="fileList.length=='0'" />
+        </van-uploader>
       </div>
       <div class="cy_login">
-        <p v-jump='path'>立即登录</p>
+        <p v-jump="path">立即登录</p>
         <p>积分: 0</p>
       </div>
     </div>
     <div>
-      <van-notice-bar text="新上线更稳定的付费快递查询接口" left-icon="volume-o" :scrollable="true"/>
+      <van-notice-bar text="新上线更稳定的付费快递查询接口" left-icon="volume-o" :scrollable="true" />
     </div>
     <div>
       <div class="cy_size">
-        <i style="font-size:0.3rem" class="van-icon van-icon-notes-o">
+        <i style="font-size:0.4rem" class="van-icon van-icon-notes-o">
           <!---->
         </i>
-        <p>我的订单</p>
+        <p v-jump='path3'>我的订单</p>
         <i class="van-icon van-icon-arrow">
           <!---->
         </i>
@@ -43,7 +44,7 @@
           </i>
           <p>待收货</p>
         </div>
-        <div>
+        <div v-jump="path1">
           <i class="van-icon van-icon-comment-o">
             <!---->
           </i>
@@ -67,7 +68,7 @@
           <i class="van-icon van-icon-coupon-o" style=" color: #EDB449;">
             <!---->
           </i>
-          <p>我的礼券</p>
+          <p v-jump='path4'>我的礼券</p>
         </div>
         <div>
           <i class="van-icon van-icon-star-o" style=" color: #EDB449;">
@@ -75,7 +76,7 @@
           </i>
           <p>我的收藏</p>
         </div>
-        <div>
+        <div v-jump="path2">
           <van-icon name="location-o" style="color: #5A9FEC;" />
           <p>我的地址</p>
         </div>
@@ -95,7 +96,16 @@
 export default {
   data() {
     return {
-      path:'/login'
+      path: "/login",
+      path1: "/review",
+      path2: "/address",
+      path3:'/order1',
+      path4:'/gift',
+       fileList: [
+        {
+          url: '/static/img/9.png',
+        },
+      ],
     };
   },
 
@@ -113,6 +123,7 @@ export default {
   padding: 0.3rem 0.2rem;
   box-sizing: border-box;
   display: flex;
+  color: #fff;
 }
 .cy_first > div:nth-of-type(1) {
   display: flex;
@@ -121,7 +132,7 @@ export default {
   font-size: 0.3rem;
   color: white;
   position: absolute;
-  left: 1.5rem;
+  left: 2.5rem;
   top: 0.5rem;
 }
 .cy_login > p:nth-of-type(2) {
@@ -131,7 +142,7 @@ export default {
   background: #b3a078;
   border-radius: 0.0694444444rem;
   position: absolute;
-  left: 1.5rem;
+  left: 2.5rem;
   top: 1.1rem;
   opacity: 0.8;
   font-size: 0.14rem;
@@ -174,29 +185,28 @@ div > img {
   border-bottom: 0.3rem solid #f5f5f5;
   justify-content: space-around;
   align-items: center;
-  
+
   background: #ffffff;
 }
-.cy_four{
+.cy_four {
   height: 1.8rem;
-        display: flex;
-        border-bottom: 0.16rem solid #F5F5F5;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        background: #FFFFFF;
-         >div{
-           margin-top:-0.2rem;
-            p{
-                font-size: 0.3rem;
-                color: #6D6D6D;
-                margin-top: 0.2rem;
-            }
-        }
-        i{
-            font-size: 0.4rem;
-            color: #6D6D6D;
-           
-        }
+  display: flex;
+  border-bottom: 0.16rem solid #f5f5f5;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  > div {
+    margin-top: -0.2rem;
+    p {
+      font-size: 0.3rem;
+      color: #6d6d6d;
+      margin-top: 0.2rem;
+    }
+  }
+  i {
+    font-size: 0.4rem;
+    color: #6d6d6d;
+  }
 }
 </style>
